@@ -1,0 +1,23 @@
+# Environment Variables
+.env
+
+# Python cache
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+# Environments
+.venv
+env/
+.streamlit/config.toml
+
+# Machine Learning Models
+models/
+*.h5
+*.pkl
+*.joblib
+
+# OS generated files
+.DS_Store

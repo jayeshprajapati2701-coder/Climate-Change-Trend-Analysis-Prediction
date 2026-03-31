@@ -1,0 +1,743 @@
+District,STATE,ID
+Morbi,Gujarat,1
+Ahmadabad,Gujarat,2
+Anand,Gujarat,3
+Devbhumi Dwarka,Gujarat,4
+Jamnagar,Gujarat,5
+Kachchh,Gujarat,6
+Bhavnagar,Gujarat,7
+Bharuch,Gujarat,8
+Surat,Gujarat,9
+Navsari,Gujarat,10
+Valsad,Gujarat,11
+Agar Malwa,Madhya Pradesh,12
+Disputed (Ratlam & Mandsaur),Madhya Pradesh,13
+Agra,Uttar Pradesh,14
+Ajmer,Rajasthan,15
+Alappuzha,Kerala,16
+Aligarh,Uttar Pradesh,17
+Alirajpur,Madhya Pradesh,18
+Disputed (Alirajpur & Dahod),Disputed (Madhya Pradesh & Gujarat),19
+Almora,Uttarakhand,20
+Alwar,Rajasthan,21
+Ambedkarnagar,Uttar Pradesh,22
+Amethi,Uttar Pradesh,23
+Amroha,Uttar Pradesh,24
+Anantapur,Andhra Pradesh,25
+Anugul,Odisha,26
+Anuppur,Madhya Pradesh,27
+Aravalli,Gujarat,28
+Ashoknagar,Madhya Pradesh,29
+Auraiya,Uttar Pradesh,30
+Azamgarh,Uttar Pradesh,31
+Budaun,Uttar Pradesh,32
+Bagalkot,Karnataka,33
+Bageshwar,Uttarakhand,34
+Baghpat,Uttar Pradesh,35
+Bahraich,Uttar Pradesh,36
+Balaghat,Madhya Pradesh,37
+Bolangir (Balangir),Odisha,38
+Balasore (Baleshwar),Odisha,39
+Ballari,Karnataka,40
+Ballia,Uttar Pradesh,41
+Balod,Chhattisgarh,42
+Baloda Bazar,Chhattisgarh,43
+Balrampur,Chhattisgarh,44
+Balrampur,Uttar Pradesh,45
+Banas Kantha,Gujarat,46
+Banda,Uttar Pradesh,47
+Banswara,Rajasthan,48
+Barabanki,Uttar Pradesh,49
+Baragarh,Odisha,50
+Baran,Rajasthan,51
+Bareilly,Uttar Pradesh,52
+Barmer,Rajasthan,53
+Barwani,Madhya Pradesh,54
+Bastar,Chhattisgarh,55
+Basti,Uttar Pradesh,56
+Belagavi,Karnataka,57
+Bemetara,Chhattisgarh,58
+Bengaluru Rural,Karnataka,59
+Bengaluru Urban,Karnataka,60
+Betul,Madhya Pradesh,61
+Bhadohi,Uttar Pradesh,62
+Bhadrak,Odisha,63
+Bharatpur,Rajasthan,64
+Bhilwara,Rajasthan,65
+Bhind,Madhya Pradesh,66
+Bhopal,Madhya Pradesh,67
+Bidar,Karnataka,68
+Bijapur,Chhattisgarh,69
+Bijnor,Uttar Pradesh,70
+Bikaner,Rajasthan,71
+Bilaspur,Chhattisgarh,72
+Gaurela-Pendra-Marwahi,Chhattisgarh,73
+Bilaspur,Himachal Pradesh,74
+Bishnupur,Manipur,75
+Bokaro,Jharkhand,76
+Bulandshahr,Uttar Pradesh,77
+Bundi,Rajasthan,78
+Burhanpur,Madhya Pradesh,79
+Central,Delhi,80
+Chamarajanagar,Karnataka,81
+Chamba,Himachal Pradesh,82
+Champawat,Uttarakhand,83
+Champhai,Mizoram,84
+Chandauli,Uttar Pradesh,85
+Chandel,Manipur,86
+Chandigarh,Chandigarh,87
+Chatra,Jharkhand,88
+Chhatarpur,Madhya Pradesh,89
+Chhindwara,Madhya Pradesh,90
+Chhota Udepur,Gujarat,91
+Chik Ballapur,Karnataka,92
+Chikkamagaluru,Karnataka,93
+Chitradurga,Karnataka,94
+Chitrakoot,Uttar Pradesh,95
+Chittaurgarh,Rajasthan,96
+Chittoor,Andhra Pradesh,97
+Churachandpur,Manipur,98
+Churu,Rajasthan,99
+Y S R Kadapa,Andhra Pradesh,100
+Cuttack,Odisha,101
+Dahod,Gujarat,102
+Dakshina  Kannada,Karnataka,103
+Daman,Dadra & Nagar Haveli & Daman & Diu,104
+Damoh,Madhya Pradesh,105
+Dangs,Gujarat,106
+Dakshin Bastar Dantewada,Chhattisgarh,107
+Datia,Madhya Pradesh,108
+Dausa,Rajasthan,109
+Davangere,Karnataka,110
+Dehradun,Uttarakhand,111
+Deogarh,Odisha,112
+Deoria,Uttar Pradesh,113
+Dewas,Madhya Pradesh,114
+Dhalai,Tripura,115
+Dhamtari,Chhattisgarh,116
+Dhanbad,Jharkhand,117
+Dhar,Madhya Pradesh,118
+Ayodhya,Uttar Pradesh,119
+Deoghar,Jharkhand,120
+Dharwad,Karnataka,121
+Dhenkanal,Odisha,122
+Dhaulpur,Rajasthan,123
+Dindori,Madhya Pradesh,124
+Dumka,Jharkhand,125
+Dungarpur,Rajasthan,126
+Durg,Chhattisgarh,127
+East,Delhi,128
+East,Sikkim,129
+East Garo Hills,Meghalaya,130
+East Godavari,Andhra Pradesh,131
+East Khasi Hills,Meghalaya,132
+East Nimar,Madhya Pradesh,133
+Ernakulam,Kerala,134
+Etah,Uttar Pradesh,135
+Etawah,Uttar Pradesh,136
+Farrukhabad,Uttar Pradesh,137
+Fatehpur,Uttar Pradesh,138
+Firozabad,Uttar Pradesh,139
+Gadag,Karnataka,140
+Gajapati,Odisha,141
+Ganjam,Odisha,142
+Garhwa,Jharkhand,143
+Gariyaband,Chhattisgarh,144
+Gautambudhnagar,Uttar Pradesh,145
+Gazipur,Uttar Pradesh,146
+Ghaziabad,Uttar Pradesh,147
+Gir Somnath,Gujarat,148
+Giridih,Jharkhand,149
+Godda,Jharkhand,150
+Gomati,Tripura,151
+Gonda,Uttar Pradesh,152
+Gorakhpur,Uttar Pradesh,153
+Gumla,Jharkhand,154
+Guna,Madhya Pradesh,155
+Guntur,Andhra Pradesh,156
+Gwalior,Madhya Pradesh,157
+Hamirpur,Himachal Pradesh,158
+Hamirpur,Uttar Pradesh,159
+Hanumangarh,Rajasthan,160
+Hapur,Uttar Pradesh,161
+Harda,Madhya Pradesh,162
+Hardoi,Uttar Pradesh,163
+Haridwar,Uttarakhand,164
+Hassan,Karnataka,165
+Hathras,Uttar Pradesh,166
+Haveri,Karnataka,167
+Hazaribagh,Jharkhand,168
+Hoshangabad,Madhya Pradesh,169
+Idukki,Kerala,170
+Imphal West,Manipur,171
+Indore,Madhya Pradesh,172
+Jabalpur,Madhya Pradesh,173
+Jagatsinghpur,Odisha,174
+Jaipur,Rajasthan,175
+Jaisalmer,Rajasthan,176
+Jajapur,Odisha,177
+Jalaun,Uttar Pradesh,178
+Jalor,Rajasthan,179
+Jamtara,Jharkhand,180
+Janjgir - Champa,Chhattisgarh,181
+Jashpur,Chhattisgarh,182
+Jaunpur,Uttar Pradesh,183
+Jhabua,Madhya Pradesh,184
+Disputed (Ratlam & Banswara),Disputed (Madhya Pradesh & Rajasthan),185
+Jhalawar,Rajasthan,186
+Jhansi,Uttar Pradesh,187
+Jharsuguda,Odisha,188
+Jhunjhunun,Rajasthan,189
+Jodhpur,Rajasthan,190
+Junagadh,Gujarat,191
+Kabirdham,Chhattisgarh,192
+Kalaburagi,Karnataka,193
+Kalahandi,Odisha,194
+Kandhamal,Odisha,195
+Kangra,Himachal Pradesh,196
+Uttar Bastar Kanker,Chhattisgarh,197
+Kannauj,Uttar Pradesh,198
+Kannur,Kerala,199
+Kanpur,Uttar Pradesh,200
+Kanpur Dehat,Uttar Pradesh,201
+Karaikal,Puducherry,202
+Karauli,Rajasthan,203
+Kasaragod,Kerala,204
+Kasganj,Uttar Pradesh,205
+Katni,Madhya Pradesh,206
+Kaushambi,Uttar Pradesh,207
+Kendraparha,Odisha,208
+Keonjhar (Kendujhar),Odisha,209
+Kheri,Uttar Pradesh,210
+Khordha,Odisha,211
+Khowai,Tripura,212
+Khunti,Jharkhand,213
+Ganganagar,Rajasthan,214
+East Jaintia Hills,Meghalaya,215
+Kodagu,Karnataka,216
+Kodarma,Jharkhand,217
+Kolar,Karnataka,218
+Kollam,Kerala,219
+Kondagaon,Chhattisgarh,220
+Koppal,Karnataka,221
+Koraput,Odisha,222
+Korba,Chhattisgarh,223
+Korea,Chhattisgarh,224
+Kota,Rajasthan,225
+Kottayam,Kerala,226
+Kozhikode,Kerala,227
+Krishna,Andhra Pradesh,228
+Kullu,Himachal Pradesh,229
+Kurnool,Andhra Pradesh,230
+Kushinagar,Uttar Pradesh,231
+Lakshadweep,Lakshadweep,232
+Lalitpur,Uttar Pradesh,233
+Latehar,Jharkhand,234
+Lohardaga,Jharkhand,235
+Lucknow,Uttar Pradesh,236
+Mahasamund,Chhattisgarh,237
+Mahe,Puducherry,238
+Mahisagar,Gujarat,239
+Mahoba,Uttar Pradesh,240
+Mainpuri,Uttar Pradesh,241
+Malappuram,Kerala,242
+"Disputed (Sahibganj, Maldah & Katihar)","Disputed (West Bengal , Bihar & Jharkhand)",243
+Malkangiri,Odisha,244
+Mandya,Karnataka,245
+Mandi,Himachal Pradesh,246
+Mandla,Madhya Pradesh,247
+Mandsaur,Madhya Pradesh,248
+Mathura,Uttar Pradesh,249
+Mau,Uttar Pradesh,250
+Mayurbhanj,Odisha,251
+Meerut,Uttar Pradesh,252
+Mirzapur,Uttar Pradesh,253
+Moradabad,Uttar Pradesh,254
+Morena,Madhya Pradesh,255
+Mungeli,Chhattisgarh,256
+Muzaffarnagar,Uttar Pradesh,257
+Mysuru,Karnataka,258
+Nabarangapur,Odisha,259
+Nagaur,Rajasthan,260
+Nainital,Uttarakhand,261
+Narainpur,Chhattisgarh,262
+Narmada,Gujarat,263
+Narshimapura,Madhya Pradesh,264
+Nayagarh,Odisha,265
+Potti Sriramulu Nellore,Andhra Pradesh,266
+New Delhi,Delhi,267
+Nicobar,Andaman & Nicobar,268
+Nimach,Madhya Pradesh,269
+North,Delhi,270
+North,Sikkim,271
+North & Middle Andaman,Andaman & Nicobar,272
+North East,Delhi,273
+North Goa,Goa,274
+North Tripura,Tripura,275
+North West,Delhi,276
+Nuaparha,Odisha,277
+Pakur,Jharkhand,278
+Palakkad,Kerala,279
+Palamu,Jharkhand,280
+Pali,Rajasthan,281
+Panch Mahals,Gujarat,282
+Panna,Madhya Pradesh,283
+West Singhbhum,Jharkhand,284
+Pattanamthitta,Kerala,285
+Pauri Garhwal,Uttarakhand,286
+Pilibhit,Uttar Pradesh,287
+Prakasam,Andhra Pradesh,288
+Pratapgarh,Rajasthan,289
+Disputed (Mandsaur & Jhalawar),Disputed (Madhya Pradesh & Rajasthan),290
+Pratapgarh,Uttar Pradesh,291
+Puducherry,Puducherry,292
+East Singhbhum,Jharkhand,293
+Puri,Odisha,294
+Raibeareli,Uttar Pradesh,295
+Raichur,Karnataka,296
+Raigarh,Chhattisgarh,297
+Raipur,Chhattisgarh,298
+Raisen,Madhya Pradesh,299
+Raj Nandgaon,Chhattisgarh,300
+Rajgarh,Madhya Pradesh,301
+Raj Samand,Rajasthan,302
+Ramgarh,Jharkhand,303
+Ramanagaram,Karnataka,304
+Rampur,Uttar Pradesh,305
+Ranchi,Jharkhand,306
+Ratlam,Madhya Pradesh,307
+Rayagarha,Odisha,308
+Rewa,Madhya Pradesh,309
+Rudraprayag,Uttarakhand,310
+Sabar Kantha,Gujarat,311
+Sagar,Madhya Pradesh,312
+Saharanpur,Uttar Pradesh,313
+Sahibganj,Jharkhand,314
+Saiha,Mizoram,315
+Sambalpur,Odisha,316
+Sambhal,Uttar Pradesh,317
+Santkabirnagar,Uttar Pradesh,318
+Saraikela-Kharsawan,Jharkhand,319
+Satna,Madhya Pradesh,320
+Sawai Madhopur,Rajasthan,321
+Sehore,Madhya Pradesh,322
+Seoni,Madhya Pradesh,323
+Sepahijala,Tripura,324
+Shahadra,Delhi,325
+Shahdol,Madhya Pradesh,326
+Shahjahanpur,Uttar Pradesh,327
+Shajapur,Madhya Pradesh,328
+Shamli,Uttar Pradesh,329
+Sheopur,Madhya Pradesh,330
+Shimla,Himachal Pradesh,331
+Shivamogga,Karnataka,332
+Shivpuri,Madhya Pradesh,333
+Shrawasti,Uttar Pradesh,334
+Siddharthnagar,Uttar Pradesh,335
+Sidhi,Madhya Pradesh,336
+Sikar,Rajasthan,337
+Simdega,Jharkhand,338
+Singrauli,Madhya Pradesh,339
+Sirmaur,Himachal Pradesh,340
+Sirohi,Rajasthan,341
+Sitapur,Uttar Pradesh,342
+Solan,Himachal Pradesh,343
+Sonbhadra,Uttar Pradesh,344
+South,Delhi,345
+South,Sikkim,346
+South Andaman,Andaman & Nicobar,347
+South Garo Hills,Meghalaya,348
+South Goa,Goa,349
+South Tripura,Tripura,350
+South West,Delhi,351
+Srikakulam,Andhra Pradesh,352
+Subarnapur,Odisha,353
+Sukma,Chhattisgarh,354
+Sultanpur,Uttar Pradesh,355
+Sundargarh,Odisha,356
+Surajpur,Chhattisgarh,357
+Surguja,Chhattisgarh,358
+Tapi,Gujarat,359
+Tehri Garhwal,Uttarakhand,360
+Thiruvananthapuram,Kerala,361
+Trissur,Kerala,362
+Tikamgarh,Madhya Pradesh,363
+Tonk,Rajasthan,364
+Tumakuru,Karnataka,365
+Udaipur,Rajasthan,366
+Udham Singh Nagar,Uttarakhand,367
+Udupi,Karnataka,368
+Ujjain,Madhya Pradesh,369
+Umaria,Madhya Pradesh,370
+Una,Himachal Pradesh,371
+Unnao,Uttar Pradesh,372
+Unokoti,Tripura,373
+Uttara  Kannada,Karnataka,374
+Vadodara,Gujarat,375
+Varanasi,Uttar Pradesh,376
+Vidisha,Madhya Pradesh,377
+Vijayapura,Karnataka,378
+Visakhapatnam,Andhra Pradesh,379
+Vizianagaram,Andhra Pradesh,380
+Wayanad,Kerala,381
+West,Sikkim,382
+West,Delhi,383
+West Garo Hills,Meghalaya,384
+West Godavari,Andhra Pradesh,385
+West Khasi Hills,Meghalaya,386
+West Nimar,Madhya Pradesh,387
+West Tripura,Tripura,388
+Yadgir,Karnataka,389
+Yanam,Puducherry,390
+Baudh (Bauda),Odisha,391
+Lawngtlai,Mizoram,392
+Serchhip,Mizoram,393
+Kolasib,Mizoram,394
+Mamit,Mizoram,395
+Lunglei,Mizoram,396
+Mirpur,Jammu And Kashmir,397
+Muzaffarabad,Jammu And Kashmir,398
+Punch,Jammu And Kashmir,399
+Anantnag,Jammu And Kashmir,400
+Baramula,Jammu And Kashmir,401
+Kathua,Jammu And Kashmir,402
+Udhampur,Jammu And Kashmir,403
+Prayagraj,Uttar Pradesh,404
+Ri-Bhoi,Meghalaya,405
+South East,Delhi,406
+South West Khasi Hills,Meghalaya,407
+South West Garo Hills,Meghalaya,408
+North Garo Hills,Meghalaya,409
+West Jaintia Hills,Meghalaya,410
+Aizawl,Mizoram,411
+Badgam,Jammu And Kashmir,412
+Bandipura,Jammu And Kashmir,413
+Ganderbal,Jammu And Kashmir,414
+Kulgam,Jammu And Kashmir,415
+Kupwara,Jammu And Kashmir,416
+Pulwama,Jammu And Kashmir,417
+Rajauri,Jammu And Kashmir,418
+Ramban,Jammu And Kashmir,419
+Riasi,Jammu And Kashmir,420
+Shupiyan,Jammu And Kashmir,421
+Srinagar,Jammu And Kashmir,422
+Leh,Ladakh,423
+Kargil,Ladakh,424
+Kishtwar,Jammu And Kashmir,425
+Doda,Jammu And Kashmir,426
+Samba,Jammu And Kashmir,427
+Imphal East,Manipur,428
+Jiribam,Manipur,429
+Nivari,Madhya Pradesh,430
+Amreli,Gujarat,431
+Diu,Dadra & Nagar Haveli & Daman & Diu,432
+Porbandar,Gujarat,433
+Rajkot,Gujarat,434
+Surendranagar,Gujarat,435
+Botad,Gujarat,436
+Kheda,Gujarat,437
+Mahesana,Gujarat,438
+Gandhinagar,Gujarat,439
+Patan,Gujarat,440
+Adilabad,Telangana,441
+Ahamadnagar,Maharashtra,442
+Akola,Maharashtra,443
+Alipur Duar,West Bengal,444
+Amaravati,Maharashtra,445
+Ambala,Haryana,446
+Amritsar,Punjab,447
+Anjaw,Arunachal Pradesh,448
+Araria,Bihar,449
+Arwal,Bihar,450
+Aurangabad,Bihar,451
+Aurangabad,Maharashtra,452
+Banka,Bihar,453
+Bankura,West Bengal,454
+Purba Barddhaman,West Bengal,455
+Barnala,Punjab,456
+Bathinda,Punjab,457
+Begusarai,Bihar,458
+Kaimur,Bihar,459
+Bhagalpur,Bihar,460
+Bhandara,Maharashtra,461
+Bhiwani,Haryana,462
+Bhojpur,Bihar,463
+Bid,Maharashtra,464
+Birbhum,West Bengal,465
+Buldhana,Maharashtra,466
+Buxar,Bihar,467
+Chamoli,Uttarakhand,468
+Chandrapur,Maharashtra,469
+Changlang,Arunachal Pradesh,470
+Dakshin Dinajpur,West Bengal,471
+Darbhanga,Bihar,472
+Darjiling,West Bengal,473
+Dhule,Maharashtra,474
+Dibang Valley,Arunachal Pradesh,475
+Paren,Nagaland,476
+East Kameng,Arunachal Pradesh,477
+Purba Medinipur,West Bengal,478
+Faridabad,Haryana,479
+Faridkot,Punjab,480
+Fatehabad,Haryana,481
+Fatehgarh Sahib,Punjab,482
+Fazilka,Punjab,483
+Firozpur,Punjab,484
+Gadchiroli,Maharashtra,485
+Gaya,Bihar,486
+Gondia,Maharashtra,487
+Gopalganj,Bihar,488
+Gurdaspur,Punjab,489
+Gurugram,Haryana,490
+Haora,West Bengal,491
+Hingoli,Maharashtra,492
+Hisar,Haryana,493
+Hoshiarpur,Punjab,494
+Hugli,West Bengal,495
+Hyderabad,Telangana,496
+Jahanabad,Bihar,497
+Jalandhar,Punjab,498
+Jalgaon,Maharashtra,499
+Jalna,Maharashtra,500
+Jalpaiguri,West Bengal,501
+Jamui,Bihar,502
+Jhajjar,Haryana,503
+Jind,Haryana,504
+Kaithal,Haryana,505
+Kapurthala,Punjab,506
+Karimnagar,Telangana,507
+Karnal,Haryana,508
+Katihar,Bihar,509
+Khagaria,Bihar,510
+Bhadradri Kothagudem,Telangana,511
+Kinnaur,Himachal Pradesh,512
+Ukhrul,Manipur,513
+Phek,Nagaland,514
+Kishanganj,Bihar,515
+Koch Bihar,West Bengal,516
+Kolhapur,Maharashtra,517
+Kolkata,West Bengal,518
+Kurukshetra,Haryana,519
+Kurung Kumey,Arunachal Pradesh,520
+Lahul & Spiti,Himachal Pradesh,521
+Lakhisarai,Bihar,522
+Latur,Maharashtra,523
+Lohit,Arunachal Pradesh,524
+Lower Dibang Valley,Arunachal Pradesh,525
+Ludhiana,Punjab,526
+Madhepura,Bihar,527
+Madhubani,Bihar,528
+Mahabubnagar,Telangana,529
+Maharajganj,Uttar Pradesh,530
+Mahendragarh,Haryana,531
+Maldah,West Bengal,532
+Mansa,Punjab,533
+Siddipet,Telangana,534
+Mewat,Haryana,535
+Moga,Punjab,536
+Wokha,Nagaland,537
+Sri Muktsar Sahib,Punjab,538
+Mumbai City,Maharashtra,539
+Munger,Bihar,540
+Murshidabad,West Bengal,541
+Muzaffarpur,Bihar,542
+Nadia,West Bengal,543
+Nagpur,Maharashtra,544
+Nalanda,Bihar,545
+Nalgonda,Telangana,546
+Nanded,Maharashtra,547
+Nandurbar,Maharashtra,548
+Nashik,Maharashtra,549
+Nawada,Bihar,550
+Shahid Bhagat Singh Nagar,Punjab,551
+Nizamabad,Telangana,552
+North Twenty-Four Parganas,West Bengal,553
+Usmanabad,Maharashtra,554
+Palghar,Maharashtra,555
+Palwal,Haryana,556
+Panchkula,Haryana,557
+Panipat,Haryana,558
+Papumpare,Arunachal Pradesh,559
+Parbhani,Maharashtra,560
+Pashchimi Champaran,Bihar,561
+Paschim Medinipur,West Bengal,562
+Pathankot,Punjab,563
+Patiala,Punjab,564
+Patna,Bihar,565
+Pithoragarh,Uttarakhand,566
+Pune,Maharashtra,567
+Purbi Champaran,Bihar,568
+Purnia,Bihar,569
+Puruliya,West Bengal,570
+Raygad,Maharashtra,571
+Rangareddy,Telangana,572
+Ratnagiri,Maharashtra,573
+Rewari,Haryana,574
+Rohtak,Haryana,575
+Rohtas,Bihar,576
+Rupnagar,Punjab,577
+Saharsa,Bihar,578
+Samastipur,Bihar,579
+Sangli,Maharashtra,580
+Sangrur,Punjab,581
+Saran,Bihar,582
+Sas Nagar (Sahibzada Ajit Singh Nagar),Punjab,583
+Satara,Maharashtra,584
+Senapati,Manipur,585
+Sheikhpura,Bihar,586
+Sheohar,Bihar,587
+Sindhudurg,Maharashtra,588
+Sirsa,Haryana,589
+Sitamarhi,Bihar,590
+Siwan,Bihar,591
+Solapur,Maharashtra,592
+Sonipat,Haryana,593
+South Twenty-Four Parganas,West Bengal,594
+Sub Urban Mumbai,Maharashtra,595
+Supaul,Bihar,596
+Tamenglong,Manipur,597
+Tarn Taran,Punjab,598
+Tawang,Arunachal Pradesh,599
+Thane,Maharashtra,600
+Thoubal,Manipur,601
+Tirap,Arunachal Pradesh,602
+Kamjong,Manipur,603
+Upper Siang,Arunachal Pradesh,604
+Upper Subansiri,Arunachal Pradesh,605
+Uttar Dinajpur,West Bengal,606
+Uttarkashi,Uttarakhand,607
+Vaishali,Bihar,608
+Mulugu,Telangana,609
+Wardha,Maharashtra,610
+Washim,Maharashtra,611
+West Kameng,Arunachal Pradesh,612
+Lower Siang,Arunachal Pradesh,613
+Yamunanagar,Haryana,614
+Yavatmal,Maharashtra,615
+Dimapur,Nagaland,616
+Kohima,Nagaland,617
+Kiphire,Nagaland,618
+Zunheboto,Nagaland,619
+Mokokchung,Nagaland,620
+Mon,Nagaland,621
+Tuensang,Nagaland,622
+Jammu,Jammu And Kashmir,623
+Lower Subansiri,Arunachal Pradesh,624
+Longleng,Nagaland,625
+Nonei,Manipur,626
+Pherzawl,Manipur,627
+Tengnoupal,Manipur,628
+Kangpokpi,Manipur,629
+Kakching,Manipur,630
+Charkhi Dadri,Haryana,631
+Jhargram,West Bengal,632
+Paschim Barddhaman,West Bengal,633
+Kalimpong,West Bengal,634
+Jogulamba Gadwal,Telangana,635
+Siang,Arunachal Pradesh,636
+West Siang,Arunachal Pradesh,637
+Shi Yomi,Arunachal Pradesh,638
+Lepa Rada,Arunachal Pradesh,639
+Pakke Kessang,Arunachal Pradesh,640
+Kra Daadi,Arunachal Pradesh,641
+Namsai,Arunachal Pradesh,642
+Kamle,Arunachal Pradesh,643
+Kumuram Bheem,Telangana,644
+Mancherial,Telangana,645
+Nirmal,Telangana,646
+Kamareddy,Telangana,647
+Sangareddy,Telangana,648
+Nagarkurnool,Telangana,649
+Wanaparthy,Telangana,650
+Narayanpet,Telangana,651
+Vikarabad,Telangana,652
+Medchal-Malkajgiri,Telangana,653
+Yadadri Bhuvanagiri,Telangana,654
+Suryapet,Telangana,655
+Khammam,Telangana,656
+Mahabubabad,Telangana,657
+Jangaon,Telangana,658
+Warangal (Urban),Telangana,659
+Warangal (Rural),Telangana,660
+Jayashankar Bhupalapally,Telangana,661
+Peddapalli,Telangana,662
+Jagtial,Telangana,663
+Ranjanna Sircilla,Telangana,664
+Medak,Telangana,665
+East Siang,Arunachal Pradesh,666
+Longding,Arunachal Pradesh,667
+Ariyalur,Tamil Nadu,668
+Chengalpattu,Tamil Nadu,669
+Chennai,Tamil Nadu,670
+Coimbatore,Tamil Nadu,671
+Cuddalore,Tamil Nadu,672
+Dharmapuri,Tamil Nadu,673
+Dindigul,Tamil Nadu,674
+Erode,Tamil Nadu,675
+Kanchipuram,Tamil Nadu,676
+Kallakkurichi,Tamil Nadu,677
+Kanyakumari,Tamil Nadu,678
+Karur,Tamil Nadu,679
+Madurai,Tamil Nadu,680
+Nilgiris,Tamil Nadu,681
+Nagapattinam,Tamil Nadu,682
+Namakkal,Tamil Nadu,683
+Perambalur,Tamil Nadu,684
+Pudukkottai,Tamil Nadu,685
+Ramanathapuram,Tamil Nadu,686
+Ranippettai,Tamil Nadu,687
+Salem,Tamil Nadu,688
+Sivaganga,Tamil Nadu,689
+Teni,Tamil Nadu,690
+Tenkasi,Tamil Nadu,691
+Thanjavur,Tamil Nadu,692
+Thiruvarur,Tamil Nadu,693
+Tiruchirapalli,Tamil Nadu,694
+Tirunelveli,Tamil Nadu,695
+Tiruppur,Tamil Nadu,696
+Tiruppattur,Tamil Nadu,697
+Tiruvallur,Tamil Nadu,698
+Tiruvannamalai,Tamil Nadu,699
+Tuticorin,Tamil Nadu,700
+Vellore,Tamil Nadu,701
+Villupuram,Tamil Nadu,702
+Virudhunagar,Tamil Nadu,703
+Krishnagiri,Tamil Nadu,704
+Disputed (Nimach & Chittaurgarh ),Disputed (Madhya Pradesh & Rajasthan),705
+Disputed (Baran & Sheopur,Disputed (Madhya Pradesh & Rajasthan),706
+Disputed (Sabar Kantha & Udaipur),Disputed (Rajathan & Gujarat),707
+Disputed (Sabar Kantha & Sirohi),Disputed (Rajathan & Gujarat),708
+Dadra & Nagar Haveli,Dadra & Nagar Haveli & Daman & Diu,709
+Baksa,Assam,710
+Barpeta,Assam,711
+Biswanath,Assam,712
+Bongaigaon,Assam,713
+Cachar,Assam,714
+Charaideo,Assam,715
+Chirang,Assam,716
+Darrang,Assam,717
+Dhemaji,Assam,718
+Dhubri,Assam,719
+Dibrugarh,Assam,720
+Dima Hasao,Assam,721
+Goalpara,Assam,722
+Golaghat,Assam,723
+Hailakandi,Assam,724
+Hojai,Assam,725
+Jorhat,Assam,726
+Kamrup Metro,Assam,727
+Kamrup Rural,Assam,728
+Karbi Anglong,Assam,729
+Karimganj,Assam,730
+Kokrajhar,Assam,731
+Lakhimpur,Assam,732
+Majuli,Assam,733
+Marigaon,Assam,734
+Nagaon,Assam,735
+Nalbari,Assam,736
+Sibsagar,Assam,737
+Sonitpur,Assam,738
+South Salmara Mancachar,Assam,739
+Tinsukia,Assam,740
+Udalguri,Assam,741
+West Karbi Anglong,Assam,742
