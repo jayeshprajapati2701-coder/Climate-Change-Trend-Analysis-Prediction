@@ -334,7 +334,10 @@ if os.path.exists(states_path) and os.path.exists(districts_path):
     states = pd.read_csv(states_path)
     districts = pd.read_csv(districts_path)
     
-    selected_state = st.sidebar.selectbox("Select State", states["STATE"])
+    # "Gujarat" को डिफॉल्ट चुनने के लिए इंडेक्स सेट करें
+    state_list = states["STATE"].tolist()
+    default_idx = state_list.index("Gujarat") if "Gujarat" in state_list else 0
+    selected_state = st.sidebar.selectbox("Select State", state_list, index=default_idx)
     state_id = states[states["STATE"] == selected_state]["ID"].values[0]
     
     dist_list = districts[districts["STATE"] == selected_state]
