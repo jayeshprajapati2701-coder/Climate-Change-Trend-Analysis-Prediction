@@ -46,7 +46,6 @@ MODEL_DIR = "models"
 if not os.path.exists(MODEL_DIR) or not os.listdir(MODEL_DIR):
     st.info("⚙️ Initializing Machine Learning Models for the first time...")
     try:
-        subprocess.run([sys.executable, "create_models.py"], check=True)
         create_models.run_model_creation()
         st.success("✅ Models initialized successfully!")
     except Exception as e:
