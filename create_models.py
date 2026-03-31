@@ -11,12 +11,13 @@ import joblib
 import warnings
 warnings.filterwarnings('ignore')
 
-# Create models directory using Pathlib
-models_dir = Path('models')
-models_dir.mkdir(exist_ok=True)
+def run_model_creation():
+    # Create models directory using Pathlib
+    models_dir = Path('models')
+    models_dir.mkdir(exist_ok=True)
 
-print("Creating ML models for Climate Dashboard...")
-print("-" * 50)
+    print("Creating ML models for Climate Dashboard...")
+    print("-" * 50)
 
 # ============================================================
 # 1. Random Forest Model for Air Quality (AQI Prediction)
@@ -45,8 +46,7 @@ y_aqi = (0.3 * X_aqi[:, 0] + 0.4 * X_aqi[:, 1] +
 rf_model = RandomForestRegressor(
     n_estimators=100,
     max_depth=15,
-    random_state=42,
-    n_jobs=-1
+    random_state=42
 )
 rf_model.fit(X_aqi, y_aqi)
 
@@ -128,11 +128,13 @@ except Exception as e:
     print("   LSTM model will not be created.")
     print("   Install TensorFlow with: pip install tensorflow")
 
-print("\n" + "=" * 50)
-print("✅ Model creation completed!")
-print("=" * 50)
-print("\nGenerated files:")
-print("  • models/rf_aqi_model.pkl       (Random Forest for Air Quality)")
-print("  • models/linear_reg_temp.pkl    (Linear Regression for Temperature)")
-print("  • models/lstm_rainfall/         (LSTM for Rainfall - SavedModel format)")
-print("\nYou can now run: streamlit run app.py")
+    print("\n" + "=" * 50)
+    print("✅ Model creation completed!")
+    print("=" * 50)
+    print("\nGenerated files:")
+    print("  • models/rf_aqi_model.pkl       (Random Forest for Air Quality)")
+    print("  • models/linear_reg_temp.pkl    (Linear Regression for Temperature)")
+    print("  • models/lstm_rainfall/         (LSTM for Rainfall - SavedModel format)")
+
+if __name__ == "__main__":
+    run_model_creation()

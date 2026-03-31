@@ -12,6 +12,8 @@ from sklearn.metrics import r2_score
 import requests
 from dotenv import load_dotenv
 import subprocess
+import sys
+import create_models
 from advanced_ml import advanced_train_climate_model
 
 # Load environment variables from .env file
@@ -44,7 +46,9 @@ MODEL_DIR = "models"
 if not os.path.exists(MODEL_DIR) or not os.listdir(MODEL_DIR):
     st.info("⚙️ Initializing Machine Learning Models for the first time...")
     try:
-        subprocess.run(["python", "create_models.py"], check=True)
+        subprocess.run([sys.executable, "create_models.py"], check=True)
+        create_models.run_model_creation()
+        st.success("✅ Models initialized successfully!")
     except Exception as e:
         st.error(f"Error generating models: {e}")
 
