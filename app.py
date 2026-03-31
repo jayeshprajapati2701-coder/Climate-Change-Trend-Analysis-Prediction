@@ -11,6 +11,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 import requests
 from dotenv import load_dotenv
+import subprocess
 from advanced_ml import advanced_train_climate_model
 
 # Load environment variables from .env file
@@ -38,6 +39,14 @@ except ImportError:
 # --- Global Directory Constants ---
 DATA_DIR = "Datasets"
 MODEL_DIR = "models"
+
+# Auto-generate models if they don't exist (Crucial for Cloud Deployment)
+if not os.path.exists(MODEL_DIR) or not os.listdir(MODEL_DIR):
+    st.info("⚙️ Initializing Machine Learning Models for the first time...")
+    try:
+        subprocess.run(["python", "create_models.py"], check=True)
+    except Exception as e:
+        st.error(f"Error generating models: {e}")
 
 LOCATION_COORDINATES = {
     # States
