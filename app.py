@@ -5,7 +5,7 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
@@ -191,7 +191,9 @@ def render_live_weather(lat, lon, coord_location):
             condition_emoji = weather_desc.split()[0]
             st.metric("Weather", condition_emoji)
         
-        current_time_str = datetime.now().strftime('%H:%M:%S')
+        # Adjust to IST (UTC + 5:30) for online deployment
+        ist_now = datetime.utcnow() + timedelta(hours=5, minutes=30)
+        current_time_str = ist_now.strftime('%H:%M:%S')
         st.info(f"**📍 {live_weather['location']}** | {weather_desc} | Last Updated: {current_time_str} (Auto-refreshes every 60s)")
     else:
         st.warning("⚠️ Unable to fetch live weather. Check API key or internet connection.")
@@ -220,7 +222,7 @@ def render_live_aqi_fragment(lat, lon, location):
                 <strong>Health Advisory:</strong> Current air is {status_text}. 
                 {'Outdoor exercise is recommended.' if live_aqi['aqi_index'] <= 2 else 'Limit prolonged outdoor exposure.'}
             </div>
-            <p style="font-size: 0.8em; color: grey;">Last Updated: {datetime.now().strftime('%H:%M:%S')}</p>
+            <p style="font-size: 0.8em; color: grey;">Last Updated: {(datetime.utcnow() + timedelta(hours=5, minutes=30)).strftime('%H:%M:%S')} (IST)</p>
         """, unsafe_allow_html=True)
 
 def sync_data_to_csv(lat, lon, daily_path, aqi_path):
@@ -1357,7 +1359,6 @@ if os.path.exists(c_monthly):
             
             if st.button("Predict Air Quality", type="primary"):
                 if rf_model:
-                    # Input array prepare karein
                     # Prepare input array
                     features = np.array([[so2, no2, rspm, spm]])
                     prediction = rf_model.predict(features)[0]
