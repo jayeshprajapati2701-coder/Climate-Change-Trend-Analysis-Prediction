@@ -27,6 +27,8 @@ if not API_KEY:
     st.error("⚠️ **OpenWeather API Key missing!**")
     st.info("लोकल रन के लिए: सुनिश्चित करें कि आपके प्रोजेक्ट रूट में `.env` फ़ाइल है और उसमें `OPENWEATHER_API_KEY=your_key` लिखा है।")
     st.info("डिप्लॉयमेंट के लिए: Streamlit Cloud की Settings > Secrets में API Key जोड़ें।")
+    st.info("For local run: Ensure you have a `.env` file in your project root with `OPENWEATHER_API_KEY=your_key`.")
+    st.info("For deployment: Add the API Key in Streamlit Cloud's Settings > Secrets.")
     st.stop()
 
 # TensorFlow - Optional dependency
@@ -191,7 +193,8 @@ def render_live_weather(lat, lon, coord_location):
             condition_emoji = weather_desc.split()[0]
             st.metric("Weather", condition_emoji)
         
-        st.info(f"**📍 {live_weather['location']}** | {weather_desc} | Last Updated: {live_weather['timestamp']} (Auto-refreshes every 60s)")
+        current_time_str = datetime.now().strftime('%H:%M:%S')
+        st.info(f"**📍 {live_weather['location']}** | {weather_desc} | Last Updated: {current_time_str} (Auto-refreshes every 60s)")
     else:
         st.warning("⚠️ Unable to fetch live weather. Check API key or internet connection.")
 
@@ -219,6 +222,7 @@ def render_live_aqi_fragment(lat, lon, location):
                 <strong>Health Advisory:</strong> Current air is {status_text}. 
                 {'Outdoor exercise is recommended.' if live_aqi['aqi_index'] <= 2 else 'Limit prolonged outdoor exposure.'}
             </div>
+            <p style="font-size: 0.8em; color: grey;">Last Updated: {datetime.now().strftime('%H:%M:%S')}</p>
         """, unsafe_allow_html=True)
 
 def sync_data_to_csv(lat, lon, daily_path, aqi_path):
@@ -254,7 +258,7 @@ st.set_page_config(page_title="AI Climate Intelligence 2026", layout="wide", pag
 PROJECT_TARGET_YEAR = 2026
 TODAY_STR = "2026-03-24" # Current simulation context
 
-# Models ko cache mein load karne ke liye function
+# Function to load prediction models into cache
 @st.cache_resource
 def load_prediction_models():
     try:
@@ -313,7 +317,7 @@ def calculate_rainfall_probability_fallback(h1, h2, h3):
     
     return final_prob
 
-# Models initialize karein
+# Initialize models
 rf_model, lr_model, lstm_model = load_prediction_models()
 
 # =====================================================================
@@ -334,7 +338,7 @@ if os.path.exists(states_path) and os.path.exists(districts_path):
     states = pd.read_csv(states_path)
     districts = pd.read_csv(districts_path)
     
-    # "Gujarat" को डिफॉल्ट चुनने के लिए इंडेक्स सेट करें
+    # Set index to select "Gujarat" as default
     state_list = states["STATE"].tolist()
     default_idx = state_list.index("Gujarat") if "Gujarat" in state_list else 0
     selected_state = st.sidebar.selectbox("Select State", state_list, index=default_idx)
@@ -1256,6 +1260,7 @@ if os.path.exists(c_monthly):
             df_aqi_real = pd.read_csv(aqi_path)
             
             # FIXED LINE: 'format=mixed' handle karega 13/01/18 aur 13/01/2018 dono ko
+            # FIXED LINE: 'format=mixed' will handle both 13/01/18 and 13/01/2018 formats
             df_aqi_real['Date'] = pd.to_datetime(df_aqi_real['Date'], dayfirst=True, format='mixed')
             
             df_aqi_real['Year'] = df_aqi_real['Date'].dt.year
@@ -1315,8 +1320,10 @@ if os.path.exists(c_monthly):
                 st.plotly_chart(fig_radar, use_container_width=True)
             else:
                 st.warning("Selected date ke liye data nahi mila. Sidebar se date change karein.")
+                st.warning("No data found for the selected date. Please change the date from the sidebar.")
         else:
             st.error(f"⚠️ File Not Found: {aqi_path}. Folder structure check karein.")
+            st.error(f"⚠️ File Not Found: {aqi_path}. Please check your folder structure.")
         
         # --- 5. CLIMATE ROADMAP TO 2030 (Original logic preserved) ---
     with tab4:
@@ -1356,6 +1363,7 @@ if os.path.exists(c_monthly):
             if st.button("Predict Air Quality", type="primary"):
                 if rf_model:
                     # Input array prepare karein
+                    # Prepare input array
                     features = np.array([[so2, no2, rspm, spm]])
                     prediction = rf_model.predict(features)[0]
                     
