@@ -25,8 +25,6 @@ API_KEY = os.getenv('OPENWEATHER_API_KEY', '').strip()
 
 if not API_KEY:
     st.error("⚠️ **OpenWeather API Key missing!**")
-    st.info("लोकल रन के लिए: सुनिश्चित करें कि आपके प्रोजेक्ट रूट में `.env` फ़ाइल है और उसमें `OPENWEATHER_API_KEY=your_key` लिखा है।")
-    st.info("डिप्लॉयमेंट के लिए: Streamlit Cloud की Settings > Secrets में API Key जोड़ें।")
     st.info("For local run: Ensure you have a `.env` file in your project root with `OPENWEATHER_API_KEY=your_key`.")
     st.info("For deployment: Add the API Key in Streamlit Cloud's Settings > Secrets.")
     st.stop()
@@ -1259,8 +1257,7 @@ if os.path.exists(c_monthly):
         if os.path.exists(aqi_path):
             df_aqi_real = pd.read_csv(aqi_path)
             
-            # FIXED LINE: 'format=mixed' handle karega 13/01/18 aur 13/01/2018 dono ko
-            # FIXED LINE: 'format=mixed' will handle both 13/01/18 and 13/01/2018 formats
+            # FIXED LINE: 'format=mixed' will handle both 13/01/18 and 13/01/2018 date formats
             df_aqi_real['Date'] = pd.to_datetime(df_aqi_real['Date'], dayfirst=True, format='mixed')
             
             df_aqi_real['Year'] = df_aqi_real['Date'].dt.year
@@ -1319,10 +1316,8 @@ if os.path.exists(c_monthly):
                 fig_radar.update_layout(polar=dict(radialaxis=dict(visible=True)), template="plotly_white")
                 st.plotly_chart(fig_radar, use_container_width=True)
             else:
-                st.warning("Selected date ke liye data nahi mila. Sidebar se date change karein.")
                 st.warning("No data found for the selected date. Please change the date from the sidebar.")
         else:
-            st.error(f"⚠️ File Not Found: {aqi_path}. Folder structure check karein.")
             st.error(f"⚠️ File Not Found: {aqi_path}. Please check your folder structure.")
         
         # --- 5. CLIMATE ROADMAP TO 2030 (Original logic preserved) ---
