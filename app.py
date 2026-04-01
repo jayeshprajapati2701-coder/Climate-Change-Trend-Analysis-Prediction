@@ -227,31 +227,41 @@ def render_live_aqi_fragment(lat, lon, location):
 
 def sync_data_to_csv(lat, lon, daily_path, aqi_path):
     """Fetch live data and append/update it in the local CSV datasets"""
-    weather = get_live_weather(lat, lon, "Sync")
-    aqi = get_live_aqi(lat, lon)
-    
-    now = datetime.now()
-    year, month, day = now.year, now.month, now.day
-    
-    # Sync Weather Data
-    if weather and os.path.exists(daily_path):
-        df = pd.read_csv(daily_path, header=None)
-        # Check if today's entry already exists
-        exists = df[(df[0] == year) & (df[1] == month) & (df[2] == day)]
-        if exists.empty:
-            new_row = [[year, month, day, weather['precipitation'], weather['temperature'], weather['temperature'], weather['temperature']]]
-            pd.DataFrame(new_row).to_csv(daily_path, mode='a', header=False, index=False)
+    try:
+        weather = get_live_weather(lat, lon, "Sync")
+        aqi = get_live_aqi(lat, lon)
+        
+        now = datetime.now()
+        year, month, day = now.year, now.month, now.day
+        
+        # Sync Weather Data
+        if weather and os.path.exists(daily_path):
+            df = pd.read_csv(daily_path, header=None)
+            # Ensure date columns are treated as numbers for comparison
+            for col in [0, 1, 2]:
+                df[col] = pd.to_numeric(df[col], errors='coerce')
+            
+            exists = df[(df[0] == year) & (df[1] == month) & (df[2] == day)]
+            if exists.empty:
+                new_row = [[year, month, day, weather['precipitation'], weather['temperature'], weather['temperature'], weather['temperature']]]
+                pd.DataFrame(new_row).to_csv(daily_path, mode='a', header=False, index=False)
 
-    # Sync AQI Data
-    if aqi and os.path.exists(aqi_path):
-        df_a = pd.read_csv(aqi_path, header=None)
-        exists_a = df_a[(df_a[0] == year) & (df_a[1] == month) & (df_a[2] == day)]
-        if exists_a.empty:
-            c = aqi['components']
-            new_aqi = [[year, month, day, aqi['aqi_index'], c.get('pm2_5',0), c.get('pm10',0), c.get('no2',0), c.get('so2',0), c.get('o3',0), c.get('co',0)]]
-            pd.DataFrame(new_aqi).to_csv(aqi_path, mode='a', header=False, index=False)
-    
-    return True
+        # Sync AQI Data
+        if aqi and os.path.exists(aqi_path):
+            df_a = pd.read_csv(aqi_path, header=None)
+            for col in [0, 1, 2]:
+                df_a[col] = pd.to_numeric(df_a[col], errors='coerce')
+                
+            exists_a = df_a[(df_a[0] == year) & (df_a[1] == month) & (df_a[2] == day)]
+            if exists_a.empty:
+                c = aqi['components']
+                new_aqi = [[year, month, day, aqi['aqi_index'], c.get('pm2_5',0), c.get('pm10',0), c.get('no2',0), c.get('so2',0), c.get('o3',0), c.get('co',0)]]
+                pd.DataFrame(new_aqi).to_csv(aqi_path, mode='a', header=False, index=False)
+        
+        return True
+    except Exception as e:
+        st.sidebar.error(f"Sync logic error: {e}")
+        return False
 
 st.set_page_config(page_title="AI Climate Intelligence 2026", layout="wide", page_icon="🌍")
 
@@ -352,6 +362,21 @@ else:
     st.error(f"❌ Missing configuration files in {DATA_DIR} (states.csv/districts.csv)! Please check your file structure.")
     st.stop()
 
+# =====================================================================
+# 3. DYNAMIC DATA ROUTING
+# =====================================================================
+if selected_dist == "None":
+    c_monthly = os.path.join(DATA_DIR, "State_data_Monthly_CSV", f"data_State_{state_id}.csv")
+    c_daily = os.path.join(DATA_DIR, "State_data_Daily_CSV", f"data_State_{state_id}.csv")
+    aqi_f = os.path.join(DATA_DIR, "State_AQI_CSV", f"data_State_{state_id}.csv")
+    loc_name = selected_state
+else:
+    d_id = dist_list[dist_list["District"] == selected_dist]["ID"].values[0]
+    c_monthly = os.path.join(DATA_DIR, "District_data_Monthly_CSV", f"data_District_{d_id}.csv")
+    c_daily = os.path.join(DATA_DIR, "District_data_Daily_CSV", f"data_District_{d_id}.csv")
+    aqi_f = os.path.join(DATA_DIR, "District_AQI_CSV", f"data_District_{d_id}.csv")
+    loc_name = selected_dist
+
 st.sidebar.markdown("---")
 st.sidebar.header("🗓️ Analysis Mode")
 view_mode = st.sidebar.radio("Dashboard View", ["Live Hour View", "Full Month Trend", "Annual Heatmap Analysis"])
@@ -368,27 +393,14 @@ if st.sidebar.button("🔄 Sync Live Data to CSV"):
     lat_s, lon_s = (None, None)
     if selected_dist != "None" and selected_dist in DISTRICT_COORDINATES:
         lat_s, lon_s = DISTRICT_COORDINATES[selected_dist]
+    elif selected_dist == "None" and selected_state in LOCATION_COORDINATES:
+        lat_s, lon_s = LOCATION_COORDINATES[selected_state]
     
     if lat_s and lon_s:
         if sync_data_to_csv(lat_s, lon_s, c_daily, aqi_f):
             st.sidebar.success(f"Data synced for {loc_name}!")
     else:
         st.sidebar.error("Coordinates not found for sync.")
-
-# =====================================================================
-# 3. DYNAMIC DATA ROUTING
-# =====================================================================
-if selected_dist == "None":
-    c_monthly = os.path.join(DATA_DIR, "State_data_Monthly_CSV", f"data_State_{state_id}.csv")
-    c_daily = os.path.join(DATA_DIR, "State_data_Daily_CSV", f"data_State_{state_id}.csv")
-    aqi_f = os.path.join(DATA_DIR, "State_AQI_CSV", f"data_State_{state_id}.csv")
-    loc_name = selected_state
-else:
-    d_id = dist_list[dist_list["District"] == selected_dist]["ID"].values[0]
-    c_monthly = os.path.join(DATA_DIR, "District_data_Monthly_CSV", f"data_District_{d_id}.csv")
-    c_daily = os.path.join(DATA_DIR, "District_data_Daily_CSV", f"data_District_{d_id}.csv")
-    aqi_f = os.path.join(DATA_DIR, "District_AQI_CSV", f"data_District_{d_id}.csv")
-    loc_name = selected_dist
 
 st.title(f"🌍 AI Climate Intelligence System: {loc_name}")
 
